@@ -35,14 +35,14 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -55,7 +55,8 @@ header {
     text-align: left;
   }
 }
-#mainphoto {
+
+@media screen and (min-width: 750px) { #mainphoto {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
@@ -66,12 +67,14 @@ header {
   background-image: url(/Users/bradyporche/documents/Easy-Prep/Easy-Prep-master/davide-cantelli-153517.jpg);
   text-align: center;
 }
+}
 #wordofthedaybox {
   height: 300px;
   width: 600px;
   background-color: #0c316d;
   opacity: 0.8;
 }
+
 #wordoftheday {
   font-family: 'Francois One', sans-serif;
   color: white;
@@ -82,6 +85,15 @@ header {
   font-family: 'Lora', serif;
   color: white;
   font-size: 40px;
+  line-height: 70%;
+}
+.trytext {
+  font-family: 'Lora', serif;
+  color: white;
+  font-size: 20px;
+  list-style-type: none;
+  text-align: center;
+  line-height: 80%;
 }
 .button {
     background-color: green;
@@ -98,11 +110,12 @@ header {
     font-family: 'Francois One', sans-serif;
 }
 #secondsection {
-    display: flex;
-    justify-content: space-around;
+display: flex;
+justify-content: space-around;
+width: 100%;
 }
 #testimonialsbox {
-    height: 230px;
+height: 300px;
     width: 512px;
     color: #0c316d;
     font-family: 'Francois One', sans-serif;
@@ -119,4 +132,59 @@ header {
     width: 300px;
     margin-top: 35px;
     background-image: url(/Users/bradyporche/documents/Easy-Prep/Easy-Prep-master/CrsCat10v2z74006.jpg);
+}
+@media screen and (min-width: 750px) { .thirdsection {
+display: flex;
+justify-content: space-around;
+width: 100%;
+text-align: center;
+height: 350px;
+border-radius: 20px;
+border-style: solid;
+background-color: #0C316D;
+margin-top: 25px;
+}
+}
+@media screen and (max-width: 750px) { .thirdsection {
+max-width: 70%;
+flex-direction: column;
+text-align: center;
+align-items: baseline;
+padding-left: 30%;
+height: 1000px;
+background-color: #0C316D;
+padding-top: 25px;
+margin-top: 10px;
+border-radius: 20px;
+}
+}
+article {
+width: 175px;
+font-family: 'Francois One', sans-serif;
+color: white;
+}
+
+.section2 {
+background-color: white;
+}
+
+.box {
+width: 175px;
+height: 20px;
+margin-top: 13%;
+margin-bottom: 3%;
+background-color: green;
+}
+
+@media screen and (max-width: 750px) { #mainphoto {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 462px;
+  max-width: 70%;
+  margin-left: 25px;
+  background-image: url(/Users/bradyporche/documents/Easy-Prep/Easy-Prep-master/davide-cantelli-153517.jpg);
+  text-align: center;
+}
 }
