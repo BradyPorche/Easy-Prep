@@ -352,3 +352,18 @@ div[data-display="no"] {
 #word {
   font-size: 36px;
 }
+/*.buttons {
+  margin-top: -50px;
+}
+#status-container {
+  padding-bottom: 50px;
+}
+.spare {
+  margin-top: -20px;
+}*/
+#status-container {
+  margin-top: 20px;
+}
+.status {
+  margin-top: -7px;
+}
