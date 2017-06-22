@@ -1,0 +1,23 @@
+div[data-display="yes"] {
+  display: block;
+}
+
+div[data-display="no"] {
+  display: none;
+}
+
+.button[data-display="yes"] {
+  display: inline;
+}
+
+.button[data-display="no"] {
+  display: none;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
