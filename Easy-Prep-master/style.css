@@ -278,7 +278,7 @@ background-color: green;
   display: none;
 }*/
 @media screen and (min-width: 750px) { #cardbackground {
-  height: 320px;
+  height: 462px;
   width: 570px;
   background-color: white;
   opacity: 0.8;
@@ -317,7 +317,7 @@ background-color: green;
   border: none;
   color: white;
   height: 30px;
-  width: 150px;
+  width: 100px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -348,4 +348,7 @@ div[data-display="no"] {
 
 .black {
   color: black;
+}
+#word {
+  font-size: 36px;
 }
