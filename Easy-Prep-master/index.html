@@ -26,20 +26,51 @@
 	</section>
 	<section id="firstsection">
 		<div id="mainphoto">
-			<div id="wordofthedaybox">
-				<p id="wordoftheday">Word of the Day</p>
-				<p id="randomword">Garner</p>
-					<p class="trytext">To gather into storage</p>
-					<p class="trytext">To deposit, as if in a granary</p>
-					<p class="trytext">verb | GAHR-ner</p>
-			</div>
-	  </div>
+			<div id="cardbackground">
+			<div id="card-container" data-side="word" data-display="yes">
+	  <div id="card">
+	    <p id="word"></p>
+	    <p id="phonetic"></p>
+		  <p id="def1"></p>
+	  	<p id="note1"></p>
+      <p id="def2"></p>
+      <p id="note2"></p>
+      <p id="def3"></p>
+      <p id="note3"></p>
+	    <p id="sentence"></p>
+    </div>
+  </div>
+  <div id="button-container">
+    <div class="buttons" id="question" data-display="yes">
+      <button class="button" id="skip">SKIP</button>
+      <button class="button" id="show">SHOW</button>
+      <button class="button" id="hint">HINT</button>
+    </div>
+    <div class="buttons" id="answer" data-display="no">
+      <button class="button" id="knew" data-display="yes">KNEW IT</button>
+      <button class="button" id="learned" data-display="no">LEARNED IT</button>
+      <button class="button" id="not-yet">NOT YET</button>
+    </div>
+  </div>
+  <div id="status-container">
+    <p class="status" id="learned-status"></p>
+    <p class="status" id="not-yet-status"></p>
+    <p class="status" id="known-status"></p>
+    <p class="status" id="total-status"></p>
+  </div>
+  <div id="completed-deck" data-display="no">
+    <p>completed all cards, wanna buy more blah blah....</p>
+  </div>
+	</div>
 	</section>
+
+<!-- Testimonials section -->
+
 	<section id="secondsection">
 	<div id="testimonialsbox">
   <h1>Easy Prep Works!</h1>
-	<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""<br><br>
-	Little Johnny<br>
+	<p>"Before I started using Easy Prep's flash cards, I was freaking out about taking the SAT. The Easy Prep method helped me prepare better than any other prep materials, and I scored in the high 1500s! Thanks, Easy Prep."<br><br>
+	John Johnson<br>
 	Austin, Texas</p>
 	</div>
   <div id="littlejohnny">
@@ -51,8 +82,9 @@
 <div class="thirdsection">
 <article>
 <div class="box left"></div>
-<h2 class="salestext">Sales Item</h2>
-<p class="salestext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h2 class="salestext">GRE</h2>
+<img class="books" src="/Users/bradyporche/documents/Easy-Prep/Easy-Prep-master/Easy Prep GRE.jpg" alt="Easy Prep GRE">
+<p class="salestext">Prepare for the next level with our GRE prep cards.</p>
 <div>
 <button class="submit">Buy</button>
 </div>
@@ -60,8 +92,9 @@
 
 <article>
 <div class="box middle"></div>
-<h2 class="salestext">Sales Item</h2>
-<p class="salestext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h2 class="salestext">SAT</h2>
+<img class="books" src="/Users/bradyporche/documents/Easy-Prep/Easy-Prep-master/Easy Prep SAT.jpg" alt="Easy Prep SAT">
+<p class="salestext">Rise to the top with our SAT prep cards.</p>
 <div>
 <button class="submit">Buy</button>
 </div>
@@ -69,8 +102,9 @@
 
 <article>
 <div class="box right"></div>
-<h2 class="salestext">Sales Item</h2>
-<p class="salestext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h2 class="salestext">LSAT</h2>
+<img class="books" src="/Users/bradyporche/documents/Easy-Prep/Easy-Prep-master/easy-prepLSAT.jpg" alt="Easy Prep LSAT">
+<p class="salestext">Prepare for law school with our LSAT prep cards.</p>
 <div>
 <button class="submit">Buy</button>
 </div>
@@ -78,6 +112,10 @@
 </div>
 
 <!--Sales Section End-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="script.js">
 
+</script>
 </body>
 </html>

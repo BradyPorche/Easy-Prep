@@ -1,7 +1,14 @@
+/* * {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}*/
+
+
 body {
   background-color: white;
 }
-header {
+@media screen and (min-width: 750px) { header {
   font-family: 'Francois One', sans-serif;
   color: #0c316d;
   height: 60px;
@@ -10,6 +17,8 @@ header {
   border-bottom: 4px solid green;
   font-size: 24px;
   letter-spacing: 1px;
+  margin: auto;
+}
 }
 .topnav {
   overflow: hidden;
@@ -66,6 +75,7 @@ header {
   margin-left: 25px;
   background-image: url(/Users/bradyporche/documents/Easy-Prep/Easy-Prep-master/davide-cantelli-153517.jpg);
   text-align: center;
+  margin: auto;
 }
 }
 #wordofthedaybox {
@@ -99,8 +109,8 @@ header {
     background-color: green;
     border: none;
     color: white;
-    padding: 15px 32px;
-    height: 25px;
+    /*padding: 15px 32px;*/
+    height: 30px;
     width: 75px;
     text-align: center;
     text-decoration: none;
@@ -132,13 +142,26 @@ height: 300px;
     width: 300px;
     margin-top: 35px;
     background-image: url(/Users/bradyporche/documents/Easy-Prep/Easy-Prep-master/CrsCat10v2z74006.jpg);
+  }
+
+  @media screen and (max-width: 750px) { #littlejohnny {
+        float: right;
+        margin-right: 35px;
+        border-radius: 50px;
+        box-shadow: 10px 10px 5px #888888;
+        height: 200px;
+        width: 300px;
+        margin-top: 35px;
+        background-image: url(/Users/bradyporche/documents/Easy-Prep/Easy-Prep-master/CrsCat10v2z74006.jpg);
+        display: none;
+}
 }
 @media screen and (min-width: 750px) { .thirdsection {
 display: flex;
 justify-content: space-around;
 width: 100%;
 text-align: center;
-height: 350px;
+height: 400px;
 border-radius: 20px;
 border-style: solid;
 background-color: #0C316D;
@@ -151,7 +174,7 @@ flex-direction: column;
 text-align: center;
 align-items: baseline;
 padding-left: 30%;
-height: 1000px;
+height: 1200px;
 background-color: #0C316D;
 padding-top: 25px;
 margin-top: 10px;
@@ -176,6 +199,19 @@ margin-bottom: 3%;
 background-color: green;
 }
 
+@media screen and (max-width: 750px) { header {
+  font-family: 'Francois One', sans-serif;
+  color: #0c316d;
+  height: 60px;
+  max-width: 70%;
+  margin-left: 25px;
+  border-bottom: 4px solid green;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin: auto;
+}
+}
+
 @media screen and (max-width: 750px) { #mainphoto {
   display: -webkit-flex;
   display: flex;
@@ -186,5 +222,83 @@ background-color: green;
   margin-left: 25px;
   background-image: url(/Users/bradyporche/documents/Easy-Prep/Easy-Prep-master/davide-cantelli-153517.jpg);
   text-align: center;
+  margin: auto;
 }
+}
+#card-container[data-display="yes"] {
+  display: block;
+}
+
+#card-container[data-display="no"] {
+  display: none;
+}
+
+
+#question[data-display="yes"] {
+  display: block;
+}
+
+#question[data-display="no"] {
+  display: none;
+}
+
+
+#answer[data-display="yes"] {
+  display: block;
+}
+
+#answer[data-display="no"] {
+  display: none;
+}
+
+
+#knew[data-display="yes"] {
+  display: block;
+}
+
+#knew[data-display="no"] {
+  display: none;
+}
+
+
+#learned[data-display="yes"] {
+  display: block;
+}
+
+#learned[data-display="no"] {
+  display: none;
+}
+
+
+#completed-deck[data-display="yes"] {
+  display: block;
+}
+
+#completed-deck[data-display="no"] {
+  display: none;
+}
+#cardbackground {
+  height: 320px;
+  width: 570px;
+  background-color: white;
+  opacity: 0.8;
+}
+#card {
+  line-height: 80%;
+}
+#sentence {
+  line-height: 90%;
+}
+#status-container {
+  line-height: 80%;
+}
+.books {
+  width: 131px;
+  height: 176px;
+}
+.thirdsection {
+  line-height: 80%;
+}
+.salestext {
+  line-height: 100%;
 }
