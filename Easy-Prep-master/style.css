@@ -225,7 +225,7 @@ background-color: green;
   margin: auto;
 }
 }
-#card-container[data-display="yes"] {
+/*#card-container[data-display="yes"] {
   display: block;
 }
 
@@ -276,13 +276,23 @@ background-color: green;
 
 #completed-deck[data-display="no"] {
   display: none;
-}
-#cardbackground {
+}*/
+@media screen and (min-width: 750px) { #cardbackground {
   height: 320px;
   width: 570px;
   background-color: white;
   opacity: 0.8;
 }
+}
+@media screen and (max-width: 750px){
+  #cardbackground {
+    height: 462px;
+    width: 570px;
+    background-color: white;
+    opacity: 0.8;
+  }
+}
+
 #card {
   line-height: 80%;
 }
@@ -301,4 +311,41 @@ background-color: green;
 }
 .salestext {
   line-height: 100%;
+}
+.lowerbutton {
+  background-color: green;
+  border: none;
+  color: white;
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: auto;
+  font-size: 20px;
+  opacity: 1;
+  font-family: 'Francois One', sans-serif;
+}
+div[data-display="yes"] {
+  display: block;
+}
+
+div[data-display="no"] {
+  display: none;
+}
+
+.button[data-display="yes"] {
+  display: inline;
+}
+
+.button[data-display="no"] {
+  display: none;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
 }
